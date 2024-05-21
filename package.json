@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Um portfólio interativo e dinâmico que destaca minhas habilidades como desenvolvedor web. Apresentando projetos diversos, desde websites responsivos até aplicações web inovadoras, este portfólio demonstra minha paixão pela criação de experiências digitais envolventes e funcionais. Explore meu trabalho e descubra mais",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "keywords": [
+    "desenvolvimento",
+    "web"
+  ],
+  "author": "Gustavo Couto",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

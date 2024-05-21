@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Meu portfólio pessoal é uma plataforma online onde compartilho meu trabalho, projetos e experiências profissionais. O objetivo principal é apresentar de forma clara e concisa as minhas habilidades, conhecimentos e conquistas, além de fornecer uma maneira fácil para que potenciais empregadores ou clientes possam entrar em contato comigo.">
+    <meta name="keywords"
+        content="portfólio pessoal, plataforma online, trabalho, projetos, experiências profissionais, habilidades, conhecimentos, conquistas, empregadores, clientes, contato profissional, perfil profissional, desenvolvimento de carreira, apresentação profissional, portfólio online">
+    <meta name="author" content="Gustavo Couto">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="Gustavo Couto, desenvolvedor web.">
+    <meta name="og:description"
+        content="Explore meu portfólio pessoal online, onde compartilho meu trabalho, projetos e experiências profissionais. Apresento de maneira clara e concisa minhas habilidades, conhecimentos e conquistas. Entre em contato para oportunidades profissionais e descubra como posso agregar valor ao seu projeto ou equipe.">
+    <meta name="og:image" content="===========">
+    <meta name="og:url" content="https://codebygustavo.github.io/portfolio/">
+    <meta name="og:type" content="website">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/source/favicon.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- source -->
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/source/favicon.svg" type="image/x-icon">
+
+    <title>Gustavo Couto, Web Developer.</title>
+</head>
+
+<body>
+
+    <%- include("../partials/header.ejs", { router: router }) %>
+        <main>
+            <%- include(router) %>
+        </main>
+        <%- include("../partials/footer.ejs") %>
+
+            <script src="/js/script.js" defer></script>
+
+</body>
+
+</html>

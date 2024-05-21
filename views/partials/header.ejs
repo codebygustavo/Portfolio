@@ -1,0 +1,61 @@
+<header class="header">
+    <div class="div-for-logo">
+        <a href="/">
+            <div class="logo-icon">
+
+            </div>
+        </a>
+    </div>
+    <div class="div-for-ul">
+        <ul>
+            <li>
+                <a class="contact-us"
+                    href="https://api.whatsapp.com/send/?phone=%2B5511996919109&text&type=phone_number&app_absent=0">Contato</a>
+            </li>
+            <li>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <div class="div-for-open-menu">
+                        <span class="span-menu-1 span-menu"></span>
+                        <span class="span-menu-2 span-menu"></span>
+                    </div>
+                </label>
+
+                <nav class="navigation-for-header menu-nav">
+                    <div class="nav-content">
+                        <ul class="nav-list">
+                            <li class="nav-list-item <%= router == '../pages/home.ejs' ? 'active-nav' : '' %>">
+                                <a href="#" class="hover-target">Inicio</a>
+                            </li>
+                            <li class="nav-list-item <%= router == '../pages/portfolio.ejs' ? 'active-nav' : '' %>">
+                                <a href="/portfolio" class="hover-target">Projetos</a>
+                            </li>
+                            <li class="nav-list-item <%= router == '../pages/about.ejs' ? 'active-nav' : '' %>">
+                                <a href="#" class="hover-target">Sobre Mim</a>
+                            </li>
+                            <li class="line">
+                            </li>
+                            <li>
+                                <ul class="contact-itens-for-nav">
+                                    <li class="li-span"><span>Fale comigo</span></li>
+                                    <li>
+                                        <a href="mailto:submit.gustavo@yahoo.com">submit.gustavo@yahoo.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="WA.me/+5511996919109">11 996919109</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </li>
+        </ul>
+    </div>
+</header>
