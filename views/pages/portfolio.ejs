@@ -1,0 +1,27 @@
+<section class="works-about-section">
+    <div class="text-about">
+        <div class="text-for-section">
+            <h1><span>./</span>Trabalhos</h1>
+        </div>
+        <p>Alguns trabalhos feitos por mim.</p>
+    </div>
+    <div class="filter-for-work">
+        <ul>
+            <li class="li-works li-works-1"><a href="">Todos</a></li>
+            <li class="li-works li-works-2"><a href="">Front-end</a></li>
+            <li class="li-works li-works-2"><a href="">Back-end</a></li>
+        </ul>
+    </div>
+    <div class="works-about-div">
+        <% works.forEach( work => { %>
+            <%- include('../partials/work.ejs', { work: work }) %>
+        <% }) %>
+    </div>
+    <div class="works-archive">
+        <a href="https://github.com/codebygustavo?tab=repositories">Todos<sup>
+                <%= allWorks %>
+            </sup></a>
+    </div>
+</section>
+
+<div class="cursor-follower">Ver</div>
