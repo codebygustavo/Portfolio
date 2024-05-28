@@ -11,7 +11,9 @@ module.exports = class DataController {
                 name: "Indicador de Status",
                 desc: "biblioteca que retorna o status de um Link.",
                 img: "/source/works/status.png",
-                path: "https://github.com/codebygustavo/indicador-de-status"
+                path: "https://github.com/codebygustavo/indicador-de-status",
+                language: "JavaScript",
+                Focused: "Logica de Programação"
             },
             {
                 id: 2,
@@ -19,7 +21,9 @@ module.exports = class DataController {
                 name: "Toughts, Blog",
                 desc: "Projeto Full-stack aonde simula uma rede social de postagens.",
                 img: "/source/works/toughts.png",
-                path: "https://github.com/codebygustavo/toughts-blog-de-mensagens"
+                path: "https://github.com/codebygustavo/toughts-blog-de-mensagens",
+                language: "JavaScript",
+                Focused: "Aprendizado de tecnologias"
             },
             {
                 id: 3,
@@ -27,7 +31,9 @@ module.exports = class DataController {
                 name: "GitHub viewer",
                 desc: "Visualizador de usuário com a api do Github.",
                 img: "/source/works/githubviewer.png",
-                path: "https://github.com/codebygustavo/github-viewer"
+                path: "https://github.com/codebygustavo/github-viewer",
+                language: "JavaScript",
+                Focused: "Logica de Programação"
             },
             {
                 id: 4,
@@ -35,7 +41,9 @@ module.exports = class DataController {
                 name: "Pokemon viewer",
                 desc: "Visualizador de Pokemons com a api pokeapi.",
                 img: "/source/works/pokemonviewer.png",
-                path: "https://github.com/codebygustavo/pokemon-viewer"
+                path: "https://github.com/codebygustavo/pokemon-viewer",
+                language: "JavaScript",
+                Focused: "Logica de Programação"
             },
             {
                 id: 5,
@@ -43,7 +51,9 @@ module.exports = class DataController {
                 name: "My day task",
                 desc: "To-Do list minimalista com node.js",
                 img: "/source/works/mydaytask.png",
-                path: "https://github.com/codebygustavo/my-day-task"
+                path: "https://github.com/codebygustavo/my-day-task",
+                language: "JavaScript",
+                Focused: "Logica de Programação e Design"
             },
         ];
 

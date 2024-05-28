@@ -17,8 +17,23 @@ module.exports = class IndexController {
             const repositories = await repositoriesForGitHub.json();
             const count = repositories.length
 
+            let works = await fetchForPortfolio();
 
-            const works = await fetchForPortfolio();
+            const filter = req.query.filter;
+
+            if (filter) {
+                switch (filter) {
+                    case "1":
+                        works = works.filter(work => work.type === 1)
+                        break;
+                    case "2":
+                        works = works.filter(work => work.type === 2)
+                        break;
+                    case "3":
+                        works = works.filter(work => work.type === 3)
+                        break;
+                }
+            }
 
             return res.render("layouts/main", { router: router, allWorks: count, works: works })
         } catch (error) {

@@ -1,5 +1,32 @@
 <div class="work-section">
-    <h1>
-        <%= work.name %>
-    </h1>
+    <div class="top-for-work">
+        <div class="text-for-section">
+            <h1><span>./</span><%= work.name %>
+            </h1>
+        </div>
+        <div class="information-for-work">
+            <ol>
+                <li>
+                    <h2 class="h2-for-works">Linguagem</h2>
+                    <p><%= work.language %></p>
+                </li>
+                <li>
+                    <h2 class="h2-for-works">Foco em</h2>
+                    <p><%= work.Focused %></p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="main-for-work">
+        <div class="img-for-work">
+            <img src="<%= work.img %>" alt="Imagem referente ao projeto: <%= work.name  %>">
+
+            <a href="<%= work.path %>" class="viewer-work">
+                <span>Ver</span>
+            </a>
+        </div>
+        <div class="text-for-work">
+            <p><%= work.desc %></p>
+        </div>
+    </div>
 </div>
