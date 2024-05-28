@@ -410,7 +410,7 @@ input:checked+.slider:before {
 
     .start-section h1,
     .start-section h2 {
-        font-size: 10.4vw;
+        font-size: 10.2vw;
         line-height: 8.45vw;
     }
 
@@ -528,7 +528,6 @@ input:checked+.slider:before {
     padding: 1rem 1.4rem;
     border-radius: 25px;
     background-color: var(--color1-1);
-    color: var(--color2);
     text-transform: uppercase;
     transition: filter 500ms;
 }
@@ -539,6 +538,9 @@ input:checked+.slider:before {
 
 .works-about-section .filter-for-work ul .li-works-1 {
     background-color: var(--color2);
+}
+
+.works-about-section .filter-for-work ul .li-works-1 a {
     color: var(--color1);
 }
 
@@ -697,8 +699,14 @@ footer.footer {
 }
 
 footer.footer h2 {
-    font-size: 10vw;
+    font-size: 4rem;
     color: var(--color2);
+}
+
+@media screen and (max-width: 720px) {
+    footer.footer h2 {
+        font-size: 10vw;
+    }
 }
 
 footer.footer .div-for-bottom-footer {

@@ -35,6 +35,7 @@ module.exports = class IndexController {
                 }
             }
 
+
             return res.render("layouts/main", { router: router, allWorks: count, works: works })
         } catch (error) {
             console.error("Erro ao buscar repositórios:", error);
