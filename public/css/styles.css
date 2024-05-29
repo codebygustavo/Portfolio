@@ -538,6 +538,8 @@ input:checked+.slider:before {
 
 .works-about-section .filter-for-work ul .li-works-1 {
     background-color: var(--color2);
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
 }
 
 .works-about-section .filter-for-work ul .li-works-1 a {
