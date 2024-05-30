@@ -56,4 +56,8 @@ module.exports = class IndexController {
             return 0;
         }
     }
+    static about(req, res) {
+        const router = "../pages/about.ejs";
+        res.render("layouts/main", { router: router })
+    }
 }

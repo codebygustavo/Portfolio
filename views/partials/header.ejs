@@ -31,24 +31,28 @@
                     <div class="nav-content">
                         <ul class="nav-list">
                             <li class="nav-list-item <%= router == '../pages/home.ejs' ? 'active-nav' : '' %>">
-                                <a href="#" class="hover-target">Inicio</a>
+                                <a href="/" class="hover-target">Inicio</a>
                             </li>
-                            <li class="nav-list-item <%= router == '../pages/portfolio.ejs' ? 'active-nav' : '' %>">
+                            <li class="nav-list-item <%= router == '../pages/portfolio.ejs' ? 'active-nav' : '' %> <%= router == '../pages/work.ejs' ? 'active-nav' : '' %>">
                                 <a href="/portfolio" class="hover-target">Projetos</a>
                             </li>
                             <li class="nav-list-item <%= router == '../pages/about.ejs' ? 'active-nav' : '' %>">
-                                <a href="#" class="hover-target">Sobre Mim</a>
+                                <a href="/about" class="hover-target">Sobre Mim</a>
                             </li>
+                            
                             <li class="line">
                             </li>
                             <li>
                                 <ul class="contact-itens-for-nav">
                                     <li class="li-span"><span>Fale comigo</span></li>
                                     <li>
-                                        <a href="mailto:submit.gustavo@yahoo.com">submit.gustavo@yahoo.com</a>
+                                        <a href="https://www.linkedin.com/in/gustavo-couto-b37182269/"><i class="bi bi-linkedin"></i> LinkdIn</a>
                                     </li>
                                     <li>
-                                        <a href="WA.me/+5511996919109">11 996919109</a>
+                                        <a href="mailto:submit.gustavo@yahoo.com"><i class="bi bi-envelope"></i> Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="WA.me/+5511996919109" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
                                     </li>
                                 </ul>
                             </li>

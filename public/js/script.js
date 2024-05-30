@@ -9,10 +9,26 @@ const a = () => {
 
 window.addEventListener("scroll", a);
 
+const toggleThema = document.querySelector(".switch input")
+
 const b = () => {
     const b = document.querySelector("body");
 
     b.classList.toggle('dark');
+
+    if(b.classList.contains('dark')) {
+        sessionStorage.setItem("mode", true)
+        toggleThema.checked = true
+    } else {
+        sessionStorage.setItem("mode", false)
+    }
+
 }
 
-document.querySelector(".switch input").addEventListener("click", b);
+const mode = sessionStorage.getItem("mode");
+
+if (mode === "true") {
+    b();
+}
+
+toggleThema.addEventListener("click", b);
